@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Groceries</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/revo.png" type="image/x-icon" />
+  </head>
+
+  <body id="body">
+    <header>
+      <nav class="navbar">
+        <a href="#"
+          ><img src="./img/revo.png" alt="logo" width="50px" class="logo"
+        /></a>
+        <div class="menu">
+          <a href="#body">Home</a>
+          <a href="#ourPackage">Our Package</a>
+          <a href="#akhir">Call Us</a>
+        </div>
+      </nav>
+      <div class="title">
+        <h1>Top Rated E-Groceries Shop In Indonesia</h1>
+        <h4>Every Day With Best Ingredients</h4>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="content">
+        <article class="artikel">
+          <div class="slide-container">
+            <div class="slide">
+              <img
+                src="./img/sayur1.jpg"
+                alt="Ingredients"
+                width="700px"
+                height="500px"
+                class="gambar1"
+              />
+              <div class="comment">
+                <h5 class="comment-text">
+                  "Sayur fresh dan segar tersedia setiap hari dengan harga
+                  terjangkau"
+                </h5>
+                <div class="comment-profil">
+                  <img
+                    src="./img/nico-robin2.jpg"
+                    alt="user-profil"
+                    width="40px"
+                    class="profil-user"
+                  />
+                  <div class="profil-info">
+                    <h5>Nico Robin</h5>
+                    <h5 class="subprofil">Ibu Rumah Tangga, 28</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="./img/sayur3.jpg"
+                alt="Ingredients"
+                width="700px"
+                height="500px"
+                class="gambar1"
+              />
+              <div class="comment">
+                <h5 class="comment-text">
+                  "Sayur fresh dan murah dengan kualitas yang bener-benar
+                  terjaga hingga ke tangan konsumen"
+                </h5>
+                <div class="comment-profil">
+                  <img
+                    src="./img/nami.jpg"
+                    alt="user-profil"
+                    width="40px"
+                    class="profil-user"
+                  />
+                  <div class="profil-info">
+                    <h5>Nami</h5>
+                    <h5 class="subprofil">Ibu Rumah Tangga, 25</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="./img/buah.jpg"
+                alt="Ingredients"
+                width="700px"
+                height="500px"
+                class="gambar1"
+              />
+              <div class="comment">
+                <h5 class="comment-text">
+                  "Buah-buahan yang tersedia juga sangat segar dan bagus untuk
+                  kesehatan"
+                </h5>
+                <div class="comment-profil">
+                  <img
+                    src="./img/vivi.jpg"
+                    alt="user-profil"
+                    width="40px"
+                    class="profil-user"
+                  />
+                  <div class="profil-info">
+                    <h5>Nevertari D Vivi</h5>
+                    <h5 class="subprofil">Ibu Rumah Tangga, 23</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="formulir">
+          <h3>Contact Us</h3>
+          <h5 class="subtitle">
+            Sales kami akan menghubungi anda 1x24 jam setelah data kami terima
+          </h5>
+          <!-- <h5 class="subtitle2">setelah data kami terima</h5> -->
+
+          <form onsubmit="event.preventDefault(); validateForm()">
+            <div class="form-group">
+              <label for="name">Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="name">Email </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="name">Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Your Phone Number"
+              />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="pesan">Message </label>
+              <textarea
+                name="name"
+                id="message"
+                cols="30"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Submit" />
+              <p id="success"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="product">
+        <h2 class="product-category">Best Selling</h2>
+        <button class="pre-btn"><img src="./img/arrow.png" alt="" /></button>
+        <button class="nxt-btn"><img src="./img/arrow.png" alt="" /></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/bayam.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Bayam</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/kentang.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Kentang</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/kol.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Kol</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/tomato.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Tomat</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/labu.jpg " class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Labu</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/Brokoli.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Brokoli</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/buncis.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Buncis</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/paprika.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Paprika</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/wortel.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Wortel</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">Diskon 50%</span>
+              <img src="./img/sawi.jpg" class="product-thumb" alt="" />
+              <button class="card-btn">Masukkan Keranjang</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Sawi</h2>
+              <p class="product-short-description">
+                Selalu menyediakan bahan dapur dengan kualitas terbaik
+              </p>
+              <span class="price">Rp. 20.000</span
+              ><span class="actual-price">Rp. 40.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ourPackage">
+        <div class="test">
+          <h1 class="test-font">Our Package</h1>
+        </div>
+      </section>
+      <section>
+        <div class="package-menu">
+          <div class="card">
+            <img
+              src="./img/vegetable.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Fresh Vegetable</a></h3>
+              <p class="subinfo">
+                Sayuran segar langsung dari sumber pertanian terbaik
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./img/fruit.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Fresh Fruit</a></h3>
+              <p class="subinfo">
+                Buah dengan kualitas terbaik dari local atau import dengan harga
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./img/delivery.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Instant Delivery</a></h3>
+              <p class="subinfo">
+                Di kirim instan oleh kurir yang telah di training dengan SOP
+                untuk menjaga kondisi belanja kamu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="package-menu">
+          <div class="card">
+            <img
+              src="./img/ingredients.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Kitchen Ingredients</a></h3>
+              <p class="subinfo">
+                Bumbu dapur lengkap untuk keperluan memasak kamu
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./img/kitchen-set.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Kitchen Set</a></h3>
+              <p class="subinfo">
+                Segala jenis alat masak untuk membantu kamu memasak
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./img/bunding-set.png"
+              alt="vegetable"
+              width="40px
+            "
+            />
+            <div class="menu-info">
+              <h3><a href="#">Bunding Set</a></h3>
+              <p class="subinfo">
+                Bingung masak apa? sudah tersedia paket untuk kamu masak di
+                dapur mu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="akhir">
+        <div class="end-title">
+          <h1>Thank you for visiting our website :)</h1>
+          <h5 class="end-subtitle">
+            Terima kasih telah mengunjungi website kami. Kami sangat menghargai
+            waktu yang Anda habiskan untuk menjelajahi halaman kami. Jika Anda
+            memiliki pertanyaan, masukan, atau permintaan, jangan ragu untuk
+            menghubungi kami. Kami berharap Anda menemukan pengalaman yang
+            bermanfaat dan menyenangkan di website kami. Kembali lagi lain waktu
+            untuk mendapatkan konten terbaru dan informasi menarik. Terima kasih
+            lagi atas kunjungan Anda!
+          </h5>
+          <button class="end-button" onclick="scrollToSection('main')">
+            Call To Action
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#"
+        ><img src="./img/revo.png" alt="logo" width="50px" class="logo"
+      /></a>
+      <div class="police">
+        <a href="#footer">Terms Of Servise</a>
+        <a href="#footer">Privacy Police</a>
+      </div>
+      <a
+        href="https://www.instagram.com/ardikahidayatur_r/?hl=id"
+        target="_blank"
+        >&copy; Ardika Hidayatur Rohman 2023</a
+      >
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
